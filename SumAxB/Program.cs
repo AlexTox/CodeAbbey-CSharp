@@ -5,7 +5,6 @@ namespace SumAxB
 {
     class Program
     {
-        public static int Sum;
         static void Main(string[] args)
         {
             var numbers = Console.ReadLine().Split(" ");
