@@ -29,7 +29,7 @@ namespace Triangles
 
             for (int i = 0; i < Triangles.Length; i++)
             {
-                Console.Write(Triangles[i]);
+                Console.Write(Triangles[i] + " ");
             }
         }
     }

@@ -17,7 +17,7 @@ namespace LinearFunction
                 int x2 = splittedRow[2], y2 = splittedRow[3];
 
                 int k = (y2 - y1) / (x2 - x1);
-                int b = ((x1 * y2) - (x2 * y1) / (x2 - x1) );
+                int b = -(((x1 * y2) - (x2 * y1)) / (x2 - x1) );
 
                 PairSpot[i, 0] = k; PairSpot[i, 1] = b;
             }

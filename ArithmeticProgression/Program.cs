@@ -21,7 +21,7 @@ namespace ArithmeticProgression
 
             for (int i = 0; i < PairSum.Length; i++)
             {
-                Console.Write(PairSum[i]);
+                Console.Write(PairSum[i] + " ");
             }
         }
     }
