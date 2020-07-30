@@ -11,7 +11,7 @@ namespace ArrayCounters
         {
             var skipProblemData = Console.ReadLine();
 
-            var arrayLetters = Console.ReadLine().Replace(" ", "").ToCharArray();
+            var arrayLetters = Array.ConvertAll(Console.ReadLine().Split(" "), Int32.Parse);
 
             for (int i = 0; i < arrayLetters.Length; i++)
             {
@@ -25,6 +25,8 @@ namespace ArrayCounters
                 }
             }
 
+            Counters = Counters.OrderBy(x => x.Letter).ToList();
+
             for (int i = 0; i < Counters.Count(); i++)
             {
                 Console.Write(Counters[i].Count + " ");
@@ -34,7 +36,8 @@ namespace ArrayCounters
 
     public class Counter
     {
-        public char Letter { get; set; }
+        public int Letter { get; set; }
         public int Count { get; set; }
     }
+
 }
