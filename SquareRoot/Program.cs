@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace SquareRoot
 {
@@ -23,7 +24,7 @@ namespace SquareRoot
                     for (int j = 0; j < data[1]; j++)
                     {
                         var division = data[0] / root;
-                        root = (root + division) / 2;
+                        root = Math.Round((root + division) / 2, 12);
                     }
                     Approximations[i] = root;
                 }
@@ -32,7 +33,7 @@ namespace SquareRoot
 
             for (int i = 0; i < Approximations.Length; i++)
             {
-                Console.Write(Approximations[i] + " ");
+                Console.Write(Approximations[i].ToString(CultureInfo.CreateSpecificCulture("en-GB")) + " ");
             }
         }
     }

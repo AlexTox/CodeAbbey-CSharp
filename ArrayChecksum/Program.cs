@@ -7,8 +7,8 @@ namespace ArrayChecksum
         static void Main(string[] args)
         {
             var arrayCount = Int32.Parse(Console.ReadLine());
-            var array = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
-            int checksum = 0;
+            var array = Array.ConvertAll(Console.ReadLine().Split(" "), Double.Parse);
+            Double checksum = 0;
 
             for (int i = 0; i < array.Length; i++)
             {
