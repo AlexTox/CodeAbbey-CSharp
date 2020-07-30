@@ -39,7 +39,7 @@ namespace BodyMassIndex
                 }
                 else if (calculatedBMI >= 30.0)
                 {
-                    Console.Write("under ");
+                    Console.Write("obese ");
                 }
 
             }
